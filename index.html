@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lixo Eletrônico - Guia de Descarte</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--Barrinha em cima com nossos nomes e tals-->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="nav-logo">Lixo Eletrônico</h1>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="about.html">Sobre nós</a></li>
+                <li><a href="https://github.com" target="_blank">GitHub</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    
+    <main class="container">
+        
+        <section class="intro">
+            <p id="intro-text">
+                O descarte do lixo eletrônico é um desafio
+                global que afeta o meio ambiente e a sáude humana. 
+                É importante que estejamos atento a forma em que descartamos o lixo
+                para evitar problemas como contaminação, riscos a sáude, 
+                poluição, e desperdício de recursos. Este guia tem o objetivo de 
+                informar e conscientizar sobre a maneira correta de descartar o lixo eletrônico, promovendo práticas sustentáveis e responsáveis.
+            </p>
+        </section>
+
+        <section class="search-section">
+            <input 
+                type="text" 
+                id="search-bar" 
+                placeholder="Procure um tipo de lixo eletrônico..." 
+                class="search-input"
+            >
+        </section>
+
+        <!-- Itens -->
+        <section class="items-list">
+            <div id="items-container">
+                <!-- o Javascript adiciona os itens por aqui de uma forma bem automatica baseado
+                 na lista que tem la no scripts.js -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Unipianos LIJA.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós - Lixo Eletrônico</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .team-content {
+            display: flex;
+            gap: 2rem;
+            align-items: flex-start;
+            margin-bottom: 2rem;
+        }
+
+        .team-image {
+            width: 250px;
+            height: 250px;
+            border-radius: 8px;
+            object-fit: cover;
+            border: 3px solid var(--olive-main);
+            flex-shrink: 0;
+            background-color: #F0F5F0;
+        }
+
+        .team-text {
+            flex: 1;
+        }
+
+        .team-text p {
+            margin-bottom: 1rem;
+            font-weight: 300;
+        }
+
+        @media (max-width: 768px) {
+            .team-content {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .team-image {
+                width: 200px;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Nav bar top -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="nav-logo">Lixo Eletrônico</h1>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="https://github.com" target="_blank">GitHub</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main -->
+    <main class="container">
+        <section class="intro">
+            <h2>Sobre o Projeto</h2>
+            <p>
+                Este é um projeto acadêmico criado pelos UNIPIANOS LIJA
+                (Unipianos Lucas, Iguinho, Jwylly e Aghata) do primeiro semestre
+                do curso de ciências da computação no câmpus Marquês, para conscientizar sobre o 
+                impacto ambiental do lixo eletrônico, e fornecer algumas orientações das 
+                melhores práticas para o descarte responsável desses resíduos. 
+            
+            </p>
+            <br>
+            <p>
+               Feito para o 
+                trabalho de extensão da UNIP, mas a gente não se importa se outras pessoas quiserem usar ou compartilhar este guia.
+            </p>
+        </section>
+
+        <section class="intro">
+            <h2>Sobre a Equipe</h2> 
+            <div class="team-content">
+                <img src="fotos/unipianos.jpeg" alt="Foto da equipe" class="team-image">
+                <div class="team-text">
+                    <p>
+                         A equipe é composta por estudantes de ciência da computação, incluindo: Aghata Cino, Igor Araujo Sales, Jwylly Gittens e Lucas Barros
+                        cada um com seu histórico e experiência única que contribuiram para a execução deste projeto.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="intro">
+            <h2>Contato</h2>
+            <p>
+                Tem perguntas ou sugestões sobre nosso projeto? Você  NÃO pode entrar em contato conosco através do GitHub 
+                ou enviar um email. NÃO quero ouvir suas ideias para melhorar este guia!
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Guia de Lixo Eletrônico para os lixeiros do mundo.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
